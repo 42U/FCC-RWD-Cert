@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please take a minute to answer a quick survey, thank you!</p>
+        
+        <form id="survey-form" action="submit" method="post">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="number" id="number-label">Number:</label>
+            <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100" required>
+            
+            <label for="dropdown">Do you like the way this survey looks?:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+                <option value="3">I prefer not to answer</option>
+            </select>
+            
+            <fieldset>
+                <legend>How are you taking this survey?:</legend>
+                <label for="radio1">
+                    <input class="inline" type="radio" id="radio1" name="radio-group" value="radio1">
+                    Computer/Laptop</label>
+                    
+                <label for="radio2">
+                    <input class="inline" type="radio" id="radio2" name="radio-group" value="radio2">
+                    Mobile Device</label>
+            </fieldset>
+            
+            <label>Have you written code in any of these languages? (Check all that apply):</label>
+            <input type="checkbox" id="checkbox1" name="checkbox-group" value="checkbox1">
+            <label for="checkbox1">Python</label>
+            
+            <input type="checkbox" id="checkbox2" name="checkbox-group" value="checkbox2">
+            <label for="checkbox2">C or C++</label>
+            
+            <input type="checkbox" id="checkbox3" name="checkbox-group" value="checkbox3">
+            <label for="checkbox3">JavaScript</label>
+            
+            <input type="checkbox" id="checkbox4" name="checkbox-group" value="checkbox4">
+            <label for="checkbox4">PHP</label>
+            
+            <textarea id="comments" name="comments" placeholder="Additional comments"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+</html>
