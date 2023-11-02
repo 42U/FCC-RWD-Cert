@@ -1,0 +1,144 @@
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  #header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  #header-img {
+    max-width: 150px;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  /* Style the navigation bar with Flexbox */
+  #nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 1000;
+  }
+  
+  .nav-link {
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the sections */
+  section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add padding to the top of the #code section to push content down */
+  #code {
+    padding-top: 150px;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  h2 {
+    color: #333;
+    margin-top: 15px;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  /* Style the video */
+  #video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 100px;
+  }
+  
+  /* Style the form */
+  #form {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+  }
+  
+  #email {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #header {
+      padding: 10px;
+    }
+  
+    .nav-link {
+      font-size: 1rem;
+    }
+  
+    .icon {
+      font-size: 1.5rem;
+    }
+    
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  
